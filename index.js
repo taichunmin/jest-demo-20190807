@@ -1,8 +1,8 @@
 exports.fromExcluded = (rate, excluded) => {
   return {
     excluded,
-    included: excluded * (1 + rate),
+    included: Math.ceil(excluded * (1 + rate)),
     rate: 0.05,
-    tax: excluded * rate
+    tax: Math.ceil(excluded * rate)
   }
 }
