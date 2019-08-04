@@ -1,0 +1,1 @@
+exports.fromExcluded = (rate, excluded) => {}
